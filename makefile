@@ -10,3 +10,5 @@ linked.o: linked.c linked.h
 run:
 	./a.out
 
+clean:
+	rm *~ *.o *.out
