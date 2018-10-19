@@ -7,10 +7,23 @@
 #include <time.h>
 #include "linked.h"
 
-struct song_node * array_index(struct song_node* array[], char * a));
-void add_song(struct song_node* array[], char * a, char * s);
-struct song_node * search_song(struct song_node* array[], char * a, char * s);
-struct song_node * search_artist(struct song_node * array[], char * a);
+void add(struct song_node *library[27], char *a, char *s);
+
+struct song_node * search_song(struct song_node *library[27], char *a, char *s);
+
+struct song_node * search_artist(struct song_node *library[27], char *a);
+
+void print_letter(struct song_node *library[27], char c);
+
+void print_artist(struct song_node *library[27], char *a);
+
+void print_library(struct song_node *library[27]);
+
+void shuffle(struct song_node *library[27]);
+
+void delete_song(struct song_node *library[27], char *a, char *s);
+
+void delete_all(struct song_node *library[27]);
 
 #endif
 
